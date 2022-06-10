@@ -1,11 +1,30 @@
 .main-tasks {
-    display: flex;
+    @include screen-size(mobile-only) {
+        display: block;
+    }
+    @include screen-size(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .main-tasks__item {
-    flex-basis: calc((100% - 30) / 4);
-    &+& {
-        margin-left: 30px;
+    @include screen-size(mobile-only) {
+        .main-tasks__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        .main-tasks__title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    @include screen-size(tablet) {
+        flex-basis: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+    @include screen-size(desktop) {
+        flex-basis: calc((100% - 120px) / 4);
     }
 }
 

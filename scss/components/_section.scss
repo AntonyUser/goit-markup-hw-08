@@ -1,8 +1,16 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    @include screen-size(not-desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     &--no-padding-top {
         padding-top: 0;
+        padding-bottom: 94px;
+        @include screen-size(not-desktop) {
+            display: none;
+        }
     }
     &--background-grey {
         background-color: var(--secondary-background-color);
@@ -15,4 +23,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    @include screen-size(not-desktop) {
+        font-size: 28px;
+    }
 }
