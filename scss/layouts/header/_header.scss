@@ -1,0 +1,14 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    @extend %FlexCentered;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+@import './nav';
+@import './contact-us';
