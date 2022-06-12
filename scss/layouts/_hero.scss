@@ -11,16 +11,22 @@
     margin-left: auto;
     margin-right: auto;
     & .container {
-        max-width: 696px;
+        width: 390px;
+        @include screen-size(desktop) {
+            width: 696px;
+        }
     }
 }
 
 .hero__title {
     margin-bottom: 30px;
-    @include Fonts(900, 44px, 1.36);
+    @include Fonts(900, 26px, 1.62);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @include screen-size(desktop) {
+        @include Fonts(900, 44px, 1.36);
+    }
 }
 
 .hero__btn {

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     margin: -15px;
     @include screen-size(mobile-only) {
-        display: block;
+        margin: 0;
     }
 }
 
