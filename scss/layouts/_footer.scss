@@ -77,5 +77,6 @@
         }
         @include screen-size(desktop) {
             margin-right: 93px;
+            align-items: flex-start;
         }
     }

@@ -3,11 +3,21 @@
 }
 
 .header__container {
-    @extend %FlexCentered;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include screen-size (mobile-only) {
+        justify-content: space-between;
+    }
 }
 
 .header__logo {
-    margin-right: 93px;
+    @include screen-size (tablet) {
+        margin-right: 88px;
+    }
+    @include screen-size (desktop) {
+        margin-right: 93px;
+    }
 }
 
 @import './nav';

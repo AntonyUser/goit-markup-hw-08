@@ -10,7 +10,7 @@
 .our-clients__item {
     display: block;
     margin: 15px;
-    @include screen-size(mobile) {
+    @include screen-size(mobile-only) {
         flex-basis: calc((100% - 60px) / 2);
     }
     @include screen-size(tablet) {

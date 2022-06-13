@@ -1,10 +1,30 @@
 .contact-us {
-    @extend %FlexCentered;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include screen-size (mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 64px;
+        &__item:not(:first-child) {
+            margin-bottom: 32px;
+        }
+    }
+    @include screen-size (tablet) {
+        margin-left: 100px;
+        &__item+&__item {
+            margin-top: 10px;
+        }
+    }
+    @include screen-size (desktop) {
+        margin-left: 300px;
+    }
 }
 
-.contact-us__item+.contact-us__item {
-    margin-left: 50px;
+@include screen-size (desktop) {
+    .contact-us__item:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .contact-us__link {
@@ -12,6 +32,21 @@
     font-weight: 500;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include screen-size (mobile-only) {
+        font-size: 24px;
+        line-height: 1.17;
+        &:hover,
+        &:focus {
+            font-size: 34px;
+        }
+    }
+    @include screen-size (tablet) {
+        font-size: 12px;
+    }
+    @include screen-size (desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -19,7 +54,33 @@
     }
 }
 
+@include screen-size (mobile-only) {
+    .first-order {
+        order: 1;
+    }
+    .second-order {
+        order: 2;
+    }
+}
+
 .contact-us__icons {
     fill: currentColor;
     margin-right: 10px;
+    @include screen-size (mobile-only) {
+        display: none;
+    }
+    @include screen-size (tablet-only) {
+        margin-right: 8px;
+    }
+}
+
+@include screen-size (tablet-only) {
+    .contact-us__icons--mail {
+        width: 14px;
+        height: 10px;
+    }
+    .contact-us__icons--phone {
+        width: 10px;
+        height: 14px;
+    }
 }

@@ -1,7 +1,10 @@
 .logo {
     font-family: var(--secondary-font-family);
-    @include Fonts(700, 26px, 1.19);
+    @include Fonts(400, 24px, 1.38);
     color: var(--accent-color);
+    @include screen-size (desktop) {
+        font-size: 26px;
+    }
     &--black {
         color: var(--primary-text-color);
     }

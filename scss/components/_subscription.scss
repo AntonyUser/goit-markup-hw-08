@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include screen-size(desktop) {
+        align-items: flex-start;
+    }
 }
 
 .subscription__title {
