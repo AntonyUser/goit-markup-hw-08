@@ -6,8 +6,11 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     @include screen-size (mobile-only) {
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
 
