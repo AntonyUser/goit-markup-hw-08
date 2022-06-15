@@ -126,9 +126,9 @@
                 </label>
                             <label class="modal__policy-label">
                   <input
+                    type="checkbox"
                     class="modal__policy-check visually-hidden"
-                    type="checkbox "
-                    name="policy "
+                    name="policy"
                   />
                   <span class="modal__checkbox"></span>
                   <span class="modal__policy-text"
@@ -202,19 +202,55 @@
                     <li class="our-work__item">
                         <div class="our-work__thumb">
                             <p class="our-work__description">Десктопные приложения</p>
-                            <img class="img" src="./images/body/tablet+keyboard.jpg " alt="Набор кода на клавиатуре с отображением на экране " width="370 " height="294 " />
+                            <picture>
+                                <!-- Для дэсктопов -->
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-1.webp    1x,
+                      ./images/body/our-works/our-works-1@2x.webp 2x
+                    " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-1.jpg    1x,
+                      ./images/body/our-works/our-works-1@2x.jpg 2x
+                    " type="image/jpg" />
+
+                                <img class="img" src="./images/body/our-works/our-works-1.jpg" alt="Набор кода на клавиатуре с отображением на экране " width="370 " height="294 " />
+                            </picture>
                         </div>
                     </li>
                     <li class="our-work__item">
                         <div class="our-work__thumb">
                             <p class="our-work__description">Мобильные приложения</p>
-                            <img class="img" src="./images/body/phone+laptop.jpg " alt="Синхронизация телефона и компьютера " width="370 " height="294 " />
+                            <picture>
+                                <!-- Для дэсктопов -->
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-2.webp    1x,
+                      ./images/body/our-works/our-works-2@2x.webp 2x
+                    " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-2.jpg    1x,
+                      ./images/body/our-works/our-works-2@2x.jpg 2x
+                    " type="image/jpg" />
+
+                                <img class="img" src="./images/body/our-works/our-works-2.jpg" alt="Синхронизация телефона и компьютера " width="370 " height="294 " />
+                            </picture>
                         </div>
                     </li>
                     <li class="our-work__item">
                         <div class="our-work__thumb">
                             <p class="our-work__description">Дизайнерские решения</p>
-                            <img class="img" src="./images/body/tablet.jpg " alt="Графика на планшете " width="370 " height="294 " />
+                            <picture>
+                                <!-- Для дэсктопов -->
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-3.webp    1x,
+                      ./images/body/our-works/our-works-3@2x.webp 2x
+                    " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                      ./images/body/our-works/our-works-3.jpg    1x,
+                      ./images/body/our-works/our-works-3@2x.jpg 2x
+                    " type="image/jpg" />
+
+                                <img class="img" src="./images/body/our-works/our-works-3.jpg" alt="Графика на планшете " width="370 " height="294 " />
+                            </picture>
                         </div>
                     </li>
                 </ul>
@@ -226,7 +262,38 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="our-team">
                     <li class="our-team__item">
-                        <img class="img" src="./images/body/igor-demyanenko.jpg " alt="Фото Игоря Демьяненко " width="270 " height="260 " />
+                        <picture>
+                            <!-- Для дэсктопов -->
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-1desk.webp    1x,
+                    ./images/body/our-team/our-team-1desk@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-1desk.jpg    1x,
+                    ./images/body/our-team/our-team-1desk@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для таблеток -->
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-1tab.webp    1x,
+                    ./images/body/our-team/our-team-1tab@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-1tab.jpg    1x,
+                    ./images/body/our-team/our-team-1tab@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для мобильных -->
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-1mob.webp    1x,
+                    ./images/body/our-team/our-team-1mob@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-1mob.jpg    1x,
+                    ./images/body/our-team/our-team-1mob@2x.jpg 2x
+                  " type="image/jpg" />
+
+                            <img class="img" src="./images/body/our-team/our-team-1mob.jpg" alt="Фото Игоря Демьяненко " width="450 " height="460 " />
+                        </picture>
+
                         <div class="our-team__container">
                             <h3 class="our-team__title">Игорь Демьяненко</h3>
                             <p lang="en " class="our-team__text">Product Designer</p>
@@ -263,7 +330,37 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./images/body/olga-repina.jpg " alt="Фото Ольги Репиной " width="270 " height="260 " />
+                        <picture>
+                            <!-- Для дэсктопов -->
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-2desk.webp    1x,
+                    ./images/body/our-team/our-team-2desk@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-2desk.jpg    1x,
+                    ./images/body/our-team/our-team-2desk@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для таблеток -->
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-2tab.webp    1x,
+                    ./images/body/our-team/our-team-2tab@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-2tab.jpg    1x,
+                    ./images/body/our-team/our-team-2tab@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для мобильных -->
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-2mob.webp    1x,
+                    ./images/body/our-team/our-team-2mob@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-2mob.jpg    1x,
+                    ./images/body/our-team/our-team-2mob@2x.jpg 2x
+                  " type="image/jpg" />
+
+                            <img class="img" src="./images/body/our-team/our-team-2mob.jpg" alt="Фото Ольги Репиной " width="450 " height="460 " />
+                        </picture>
                         <div class="our-team__container">
                             <h3 class="our-team__title">Ольга Репина</h3>
                             <p lang="en " class="our-team__text">Frontend Developer</p>
@@ -300,7 +397,37 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./images/body/nikolay-tarasov.jpg " alt="Фото Николая Тарасова " width="270 " height="260 " />
+                        <picture>
+                            <!-- Для дэсктопов -->
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-3desk.webp    1x,
+                    ./images/body/our-team/our-team-3desk@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-3desk.jpg    1x,
+                    ./images/body/our-team/our-team-3desk@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для таблеток -->
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-3tab.webp    1x,
+                    ./images/body/our-team/our-team-3tab@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-3tab.jpg    1x,
+                    ./images/body/our-team/our-team-3tab@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для мобильных -->
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-3mob.webp    1x,
+                    ./images/body/our-team/our-team-3mob@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-3mob.jpg    1x,
+                    ./images/body/our-team/our-team-3mob@2x.jpg 2x
+                  " type="image/jpg" />
+
+                            <img class="img" src="./images/body/our-team/our-team-3mob.jpg" alt="Фото Николая Тарасова " width="450 " height="460 " />
+                        </picture>
                         <div class="our-team__container">
                             <h3 class="our-team__title">Николай Тарасов</h3>
                             <p lang="en " class="our-team__text">Marketing</p>
@@ -337,7 +464,37 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./images/body/mikhail-ermakov.jpg " alt="Фото Михаила Ермакова " width="270 " height="260 " />
+                        <picture>
+                            <!-- Для дэсктопов -->
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-4desk.webp    1x,
+                    ./images/body/our-team/our-team-4desk@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/body/our-team/our-team-4desk.jpg    1x,
+                    ./images/body/our-team/our-team-4desk@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для таблеток -->
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-4tab.webp    1x,
+                    ./images/body/our-team/our-team-4tab@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                    ./images/body/our-team/our-team-4tab.jpg    1x,
+                    ./images/body/our-team/our-team-4tab@2x.jpg 2x
+                  " type="image/jpg" />
+                            <!-- Для мобильных -->
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-4mob.webp    1x,
+                    ./images/body/our-team/our-team-4mob@2x.webp 2x
+                  " type="image/webp" />
+                            <source media="(max-width: 767px)" srcset="
+                    ./images/body/our-team/our-team-4mob.jpg    1x,
+                    ./images/body/our-team/our-team-4mob@2x.jpg 2x
+                  " type="image/jpg" />
+
+                            <img class="img" src="./images/body/our-team/our-team-4mob.jpg" alt="Фото Михаила Ермакова " width="450 " height="460 " />
+                        </picture>
                         <div class="our-team__container">
                             <h3 class="our-team__title">Михаил Ермаков</h3>
                             <p lang="en " class="our-team__text">UI Designer</p>

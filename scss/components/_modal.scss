@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     display: block;
-    width: 409px;
+    width: 450px;
     padding: 40px;
     background: var(--hero-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -132,23 +132,31 @@
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    margin-right: 9px;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .modal__policy-check:checked+& {
-        border: transparent;
-        box-shadow: none;
-        background-color: var(--accent-color);
-        background-image: url(../images/body/icons/originals/check.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+    @include screen-size (desktop) {
+        margin-right: 9px;
     }
+}
+
+.modal__policy-check:checked+.modal__checkbox {
+    border: transparent;
+    box-shadow: none;
+    background-color: var(--accent-color);
+    background-image: url(../images/body/icons/originals/check.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .modal__policy-text {
     @include Fonts(400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    @include screen-size (not-desktop) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .modal__policy-link {

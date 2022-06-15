@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     @include screen-size (mobile-only) {
+        margin-top: auto;
         margin-bottom: 64px;
         &__item:not(:first-child) {
             margin-bottom: 32px;

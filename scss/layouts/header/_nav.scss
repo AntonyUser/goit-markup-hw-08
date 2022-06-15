@@ -22,9 +22,9 @@
 }
 
 .nav__list {
-    @include screen-size (mobile-only) {
-        margin-bottom: 302px;
-    }
+    // @include screen-size (mobile-only) {
+    //     margin-bottom: 302px;
+    // }
     @include screen-size (tablet) {
         display: flex;
         align-items: center;
