@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include screen-size(not-desktop) {
+        width: 100%;
+    }
     @include screen-size(desktop) {
         align-items: flex-start;
     }
@@ -23,6 +26,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -40,8 +44,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    max-width: 450px;
     margin-bottom: 20px;
+    width: 100%;
+    @include screen-size(mobile) {
+        width: 450px;
+    }
     @include screen-size(desktop) {
         width: 358px;
     }

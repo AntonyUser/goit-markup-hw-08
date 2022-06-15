@@ -477,6 +477,12 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .subscription {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscription {
     -webkit-box-align: start;
@@ -514,6 +520,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -532,8 +539,14 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  max-width: 450px;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
