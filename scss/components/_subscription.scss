@@ -6,6 +6,9 @@
     @include screen-size(not-desktop) {
         width: 100%;
     }
+    @include screen-size(tablet) {
+        margin-top: 60px;
+    }
     @include screen-size(desktop) {
         align-items: flex-start;
     }
